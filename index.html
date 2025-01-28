@@ -1,176 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ryan McDuffie Portfolio</title>
-    <style>
-        body {
-            background-color: #fff;
-            color: #000;
-            font-family: "Georgia", serif;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            text-align: center;
-            padding: 20px 0;
-        }
-        footer {
-            text-align: center;
-            padding: 10px 0;
-            font-size: 14px;
-        }
-        .portfolio {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-            padding: 20px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        .portfolio-item {
-            text-align: center;
-            margin: 20px 0;
-            border: none;
-            box-shadow: none;
-            padding: 0;
-        }
-        .portfolio-item img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 5px;
-        }
-        .portfolio-item h3 {
-            font-weight: normal;
-            font-size: 16px;
-            font-style: italic;
-            margin: 10px 0 0 0;
-        }
-        .links {
-            margin: 20px 0;
-        }
-        .links a {
-            margin: 0 10px;
-            color: #000;
-            text-decoration: none;
-        }
-        .links a:hover {
-            text-decoration: underline;
-        }
-        /* About Me Section */
-        .about-me {
-            display: flex;
-            flex-wrap: wrap; /* allows wrapping on smaller screens */
-            align-items: center;
-            justify-content: center;
-            gap: 20px; /* space between text and image */
-            max-width: 1200px;
-            margin: 40px auto; /* add some extra space above/below */
-            padding: 0 20px;
-        }
-        .about-text {
-            /* no forced width, stays just wide enough for text */
-        }
-        .about-text p {
-            margin: 0;
-            font-size: 16px;
-        }
-        .about-image img {
-            width: 50%; /* make the image half its container's width */
-            height: auto;
-            border-radius: 5px;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ryan McDuffie Portfolio</title>
+  <style>
+    body {
+      background-color: #fff;
+      color: #000;
+      font-family: "Georgia", serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      text-align: center;
+      padding: 20px 0;
+    }
+    footer {
+      text-align: center;
+      padding: 10px 0;
+      font-size: 14px;
+    }
+    .portfolio {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      padding: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .portfolio-item {
+      text-align: center;
+      margin: 20px 0;
+      border: none;
+      box-shadow: none;
+      padding: 0;
+    }
+    .portfolio-item img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+    .portfolio-item h3 {
+      font-weight: normal;
+      font-size: 16px;
+      font-style: italic;
+      margin: 10px 0 0 0;
+    }
+    .links {
+      margin: 20px 0;
+    }
+    .links a {
+      margin: 0 10px;
+      color: #000;
+      text-decoration: none;
+    }
+    .links a:hover {
+      text-decoration: underline;
+    }
+
+    /* About Me Section */
+    .about-me {
+      display: flex;
+      flex-wrap: wrap;       /* Allows it to wrap on narrow screens */
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+      text-align: left;      /* Keeps text aligned left */
+    }
+    .about-me img {
+      width: 300px;         /* Make the image a fixed width so it stays smaller */
+      height: auto;
+      border-radius: 5px;
+    }
+    .about-me p {
+      margin: 0;
+      font-size: 16px;
+      max-width: 500px;     /* Optional limit so it doesn’t stretch too wide */
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <div style="text-align: center;">
-            <img src="images/title_written2.jpg" alt="Ryan McDuffie Banner" style="max-width: 100%;">
-            <img src="images/logo_animated_v2.gif" alt="Ryan McDuffie's Animated Logo" style="margin-top: 10px;">
-        </div>
-    </header>
-    <main>
-        <section class="portfolio">
-            <div class="portfolio-item">
-                <img src="images/HYSM_v1_450.png" alt="Have You Seen Me?">
-                <h3>Have You Seen Me? (in production)</h3>
-            </div>
-            <div class="portfolio-item">
-                <img src="images/creativity_unleashed_450.jpg" alt="Creativity Unleashed">
-                <h3>Creativity Unleashed: Screenwriting in the AI Era (Book)</h3>
-            </div>
-            <div class="portfolio-item">
-                <img src="images/mcduffieplus_450v2.jpg" alt="McDuffie Plus">
-                <h3>McDuffie Plus (Patreon)</h3>
-            </div>
-            <div class="portfolio-item">
-                <img src="images/smile2_450.jpg" alt="Smile">
-                <h3>Smile</h3>
-            </div>
-            <div class="portfolio-item">
-                <img src="images/Hi_450.jpg" alt="Hi!">
-                <h3>Hi!</h3>
-            </div>
-            <div class="portfolio-item">
-                <img src="images/TravelTimeWithTami_450.jpg" alt="Travel Time with Tami">
-                <h3>Travel Time with Tami</h3>
-            </div>
-            <div class="portfolio-item">
-                <img src="images/AsThyMothDothRothV1_450.jpg" alt="As Thy Moth Doth Wroth">
-                <h3>As Thy Moth Doth Wroth</h3>
-            </div>
-            <div class="portfolio-item">
-                <img src="images/DisHorror_for_web_450.jpg" alt="Dismembering Horror">
-                <h3>Dismembering Horror (Podcast)</h3>
-            </div>
-            <div class="portfolio-item">
-                <img src="images/chebo_450.jpg" alt="The Chebo">
-                <h3>The Chebo</h3>
-            </div>
-            <div class="portfolio-item">
-                <img src="images/shelter_450.jpg" alt="Shelter from the Storm">
-                <h3>Shelter from the Storm</h3>
-            </div>
-            <div class="portfolio-item">
-                <img src="images/lovebound2_450.jpg" alt="Lovebound: Love Abounds">
-                <h3>Lovebound: Love Abounds</h3>
-            </div>
-            <div class="portfolio-item">
-                <img src="images/forestfalls2_450.jpg" alt="Forest Falls">
-                <h3>Forest Falls</h3>
-            </div>
-            <div class="portfolio-item">
-                <img src="images/kristy2_450.jpg" alt="The Kristy Corollary">
-                <h3>The Kristy Corollary</h3>
-            </div>
-            <div class="portfolio-item">
-                <img src="images/douche4_450.jpg" alt="Douche">
-                <h3>Douche</h3>
-            </div>
-            <div class="portfolio-item">
-                <img src="images/swimmingtime_450.jpg" alt="Swimming Time with Tami">
-                <h3>Swimming Time with Tami</h3>
-            </div>
-        </section>
+  <header>
+    <div style="text-align: center;">
+      <img src="images/title_written2.jpg" alt="Ryan McDuffie Banner" style="max-width: 100%;">
+      <img src="images/logo_animated_v2.gif" alt="Ryan McDuffie's Animated Logo" style="margin-top: 10px;">
+    </div>
+  </header>
 
-        <!-- About Me Section -->
-        <section class="about-me">
-            <div class="about-text">
-                <p>Ryan is a filmmaker-explorer living in Hollywood.</p>
-            </div>
-            <div class="about-image">
-                <img src="images/ryan_image1.jpg" alt="Ryan's Photo">
-            </div>
-        </section>
-    </main>
-    <footer>
-        <div class="links">
-            <a href="mailto:ryanmcduffie@gmail.com">Email</a>
-            <a href="https://instagram.com/mayormcduffie">Instagram</a>
-            <a href="#">YouTube</a>
-        </div>
-        <p>&copy; 2025 Ryan McDuffie</p>
-    </footer>
+  <main>
+    <section class="portfolio">
+      <div class="portfolio-item">
+        <img src="images/HYSM_v1_450.png" alt="Have You Seen Me?">
+        <h3>Have You Seen Me? (in production)</h3>
+      </div>
+      <div class="portfolio-item">
+        <img src="images/creativity_unleashed_450.jpg" alt="Creativity Unleashed">
+        <h3>Creativity Unleashed: Screenwriting in the AI Era (Book)</h3>
+      </div>
+      <div class="portfolio-item">
+        <img src="images/mcduffieplus_450v2.jpg" alt="McDuffie Plus">
+        <h3>McDuffie Plus (Patreon)</h3>
+      </div>
+      <div class="portfolio-item">
+        <img src="images/smile2_450.jpg" alt="Smile">
+        <h3>Smile</h3>
+      </div>
+      <div class="portfolio-item">
+        <img src="images/Hi_450.jpg" alt="Hi!">
+        <h3>Hi!</h3>
+      </div>
+      <div class="portfolio-item">
+        <img src="images/TravelTimeWithTami_450.jpg" alt="Travel Time with Tami">
+        <h3>Travel Time with Tami</h3>
+      </div>
+      <div class="portfolio-item">
+        <img src="images/AsThyMothDothRothV1_450.jpg" alt="As Thy Moth Doth Wroth">
+        <h3>As Thy Moth Doth Wroth</h3>
+      </div>
+      <div class="portfolio-item">
+        <img src="images/DisHorror_for_web_450.jpg" alt="Dismembering Horror">
+        <h3>Dismembering Horror (Podcast)</h3>
+      </div>
+      <div class="portfolio-item">
+        <img src="images/chebo_450.jpg" alt="The Chebo">
+        <h3>The Chebo</h3>
+      </div>
+      <div class="portfolio-item">
+        <img src="images/shelter_450.jpg" alt="Shelter from the Storm">
+        <h3>Shelter from the Storm</h3>
+      </div>
+      <div class="portfolio-item">
+        <img src="images/lovebound2_450.jpg" alt="Lovebound: Love Abounds">
+        <h3>Lovebound: Love Abounds</h3>
+      </div>
+      <div class="portfolio-item">
+        <img src="images/forestfalls2_450.jpg" alt="Forest Falls">
+        <h3>Forest Falls</h3>
+      </div>
+      <div class="portfolio-item">
+        <img src="images/kristy2_450.jpg" alt="The Kristy Corollary">
+        <h3>The Kristy Corollary</h3>
+      </div>
+      <div class="portfolio-item">
+        <img src="images/douche4_450.jpg" alt="Douche">
+        <h3>Douche</h3>
+      </div>
+      <div class="portfolio-item">
+        <img src="images/swimmingtime_450.jpg" alt="Swimming Time with Tami">
+        <h3>Swimming Time with Tami</h3>
+      </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section class="about-me">
+      <img src="images/ryan_image1.jpg" alt="Ryan's Photo">
+      <p>Ryan is a filmmaker-explorer living in Hollywood.</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="links">
+      <a href="mailto:ryanmcduffie@gmail.com">Email</a>
+      <a href="https://instagram.com/mayormcduffie">Instagram</a>
+      <a href="#">YouTube</a>
+    </div>
+    <p>&copy; 2025 Ryan McDuffie</p>
+  </footer>
 </body>
 </html>
