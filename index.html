@@ -12,15 +12,55 @@
       margin: 0;
       padding: 0;
     }
+    /*************
+     * HEADER
+     *************/
     header {
       text-align: center;
       padding: 20px 0;
     }
+    .header-container {
+      /* Center the banner and logo and stack them vertically */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    /* Banner (handwritten RyanMcDuffie.com) */
+    .header-banner {
+      /* Adjust to match your preferred size */
+      max-width: 400px;
+      width: 100%;
+    }
+    /* Animated doodle/logo */
+    .header-logo {
+      max-width: 200px;
+      margin-top: 10px;
+    }
+
+    /*************
+     * FOOTER
+     *************/
     footer {
       text-align: center;
       padding: 10px 0;
       font-size: 14px;
     }
+    .links {
+      margin: 20px 0;
+    }
+    .links a {
+      margin: 0 10px;
+      color: #000;
+      text-decoration: none;
+    }
+    .links a:hover {
+      text-decoration: underline;
+    }
+
+    /*************
+     * PORTFOLIO
+     *************/
     .portfolio {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -47,47 +87,49 @@
       font-style: italic;
       margin: 10px 0 0 0;
     }
-    .links {
-      margin: 20px 0;
-    }
-    .links a {
-      margin: 0 10px;
-      color: #000;
-      text-decoration: none;
-    }
-    .links a:hover {
-      text-decoration: underline;
-    }
 
-    /* About Me Section */
+    /*************
+     * ABOUT ME
+     *************/
     .about-me {
       display: flex;
-      flex-wrap: wrap;       /* Allows it to wrap on narrow screens */
+      flex-wrap: wrap;  /* Allows it to wrap on narrow screens */
       align-items: center;
       justify-content: center;
       gap: 20px;
       max-width: 1200px;
       margin: 40px auto;
       padding: 0 20px;
-      text-align: left;      /* Keeps text aligned left */
+      text-align: left;
     }
     .about-me img {
-      width: 300px;         /* Make the image a fixed width so it stays smaller */
+      width: 300px;     /* Make the image a fixed width so it stays smaller */
       height: auto;
       border-radius: 5px;
     }
     .about-me p {
       margin: 0;
       font-size: 16px;
-      max-width: 500px;     /* Optional limit so it doesn’t stretch too wide */
+      max-width: 500px; /* Keep the text from stretching too wide */
     }
   </style>
 </head>
 <body>
+
   <header>
-    <div style="text-align: center;">
-      <img src="images/title_written2.jpg" alt="Ryan McDuffie Banner" style="max-width: 100%;">
-      <img src="images/logo_animated_v2.gif" alt="Ryan McDuffie's Animated Logo" style="margin-top: 10px;">
+    <div class="header-container">
+      <!-- Banner image -->
+      <img 
+        class="header-banner" 
+        src="images/title_written2.jpg" 
+        alt="Ryan McDuffie Banner" 
+      />
+      <!-- Animated doodle/logo -->
+      <img 
+        class="header-logo" 
+        src="images/logo_animated_v2.gif" 
+        alt="Ryan McDuffie's Animated Logo" 
+      />
     </div>
   </header>
 
@@ -170,5 +212,6 @@
     </div>
     <p>&copy; 2025 Ryan McDuffie</p>
   </footer>
+
 </body>
 </html>
