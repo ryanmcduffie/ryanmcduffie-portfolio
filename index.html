@@ -20,19 +20,15 @@
       padding: 20px 0;
     }
     .header-container {
-      /* Center the banner and logo and stack them vertically */
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
     }
-    /* Banner (handwritten RyanMcDuffie.com) */
     .header-banner {
-      /* Adjust to match your preferred size */
       max-width: 400px;
       width: 100%;
     }
-    /* Animated doodle/logo */
     .header-logo {
       max-width: 300px;
       margin-top: 10px;
@@ -63,6 +59,7 @@
      *************/
     .portfolio {
       display: grid;
+      /* Newest films top-left, oldest bottom-right */
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       gap: 20px;
       padding: 20px;
@@ -87,6 +84,11 @@
       font-style: italic;
       margin: 10px 0 0 0;
     }
+    /* Year/Runtime line beneath each title, non-italic */
+    .portfolio-item p {
+      margin: 5px 0 0 0;
+      font-style: normal; 
+    }
 
     .portfolio-item a {
       text-decoration: none;
@@ -101,7 +103,7 @@
      *************/
     .about-me {
       display: flex;
-      flex-wrap: wrap;  /* Allows it to wrap on narrow screens */
+      flex-wrap: wrap;
       align-items: center;
       justify-content: center;
       gap: 20px;
@@ -111,14 +113,14 @@
       text-align: left;
     }
     .about-me img {
-      width: 300px;     /* Make the image a fixed width so it stays smaller */
+      width: 300px;
       height: auto;
       border-radius: 5px;
     }
     .about-me p {
       margin: 0;
       font-size: 16px;
-      max-width: 500px; /* Keep the text from stretching too wide */
+      max-width: 500px;
     }
   </style>
 </head>
@@ -126,118 +128,184 @@
 
   <header>
     <div class="header-container">
-      <!-- Banner image -->
-      <img 
-        class="header-banner" 
-        src="images/title_written2.jpg" 
-        alt="Ryan McDuffie Banner" 
+      <img
+        class="header-banner"
+        src="images/title_written2.jpg"
+        alt="Ryan McDuffie Banner"
       />
-      <!-- Animated doodle/logo -->
-      <img 
-        class="header-logo" 
-        src="images/logo_animated_v2.gif" 
-        alt="Ryan McDuffie's Animated Logo" 
+      <img
+        class="header-logo"
+        src="images/logo_animated_v2.gif"
+        alt="Ryan McDuffie's Animated Logo"
       />
     </div>
   </header>
 
   <main>
     <section class="portfolio">
+      <!-- 1) Have You Seen Me? (in production) -->
       <div class="portfolio-item">
         <a href="#" target="_blank">
           <img src="images/HYSM_v1_450.png" alt="Have You Seen Me?">
           <h3>Have You Seen Me? (in production)</h3>
+          <!-- No year/runtime -->
         </a>
       </div>
+
+      <!-- 2) Creativity Unleashed (Book; no year/runtime) -->
       <div class="portfolio-item">
         <a href="https://www.amazon.com/Creativity-Unleashed-Screenwriting-AI-Era/dp/B0CVLTPCM3" target="_blank">
           <img src="images/creativity_unleashed_450.jpg" alt="Creativity Unleashed">
           <h3>Creativity Unleashed: Screenwriting in the AI Era (Book)</h3>
         </a>
       </div>
+
+      <!-- 3) McDuffie Plus (Patreon; no year/runtime) -->
       <div class="portfolio-item">
         <a href="https://www.patreon.com/c/mcduffieplus" target="_blank">
           <img src="images/mcduffieplus_450v2.jpg" alt="McDuffie Plus">
           <h3>McDuffie Plus (Patreon)</h3>
         </a>
       </div>
+
+      <!-- 4) Smile (2021, 2 min.) -->
       <div class="portfolio-item">
         <a href="https://www.youtube.com/watch?v=70JcWRDsGTg" target="_blank">
           <img src="images/smile2_450.jpg" alt="Smile">
           <h3>Smile</h3>
+          <p>(2021, 2 min.)</p>
         </a>
       </div>
+
+      <!-- 5) Hi! (2021, 3 min.) -->
       <div class="portfolio-item">
         <a href="https://www.youtube.com/watch?v=Lu3SOrsxiqc" target="_blank">
           <img src="images/Hi_450.jpg" alt="Hi!">
           <h3>Hi!</h3>
+          <p>(2021, 3 min.)</p>
         </a>
       </div>
+
+      <!-- 6) Travel Time with Tami (2020, 32 min.) -->
       <div class="portfolio-item">
         <a href="https://www.youtube.com/watch?v=VueEcHNt85I" target="_blank">
           <img src="images/TravelTimeWithTami_450.jpg" alt="Travel Time with Tami">
           <h3>Travel Time with Tami</h3>
+          <p>(2020, 32 min.)</p>
         </a>
       </div>
+
+      <!-- 7) As Thy Moth Doth Wroth (2019, 8 min.) -->
       <div class="portfolio-item">
         <a href="https://www.youtube.com/watch?v=q7kA9YIudlU" target="_blank">
           <img src="images/AsThyMothDothRothV1_450.jpg" alt="As Thy Moth Doth Wroth">
           <h3>As Thy Moth Doth Wroth</h3>
+          <p>(2019, 8 min.)</p>
         </a>
       </div>
+
+      <!-- 8) Dismembering Horror (Podcast; no year/runtime) -->
       <div class="portfolio-item">
         <a href="https://www.youtube.com/@DismemberingHorror" target="_blank">
           <img src="images/DisHorror_for_web_450.jpg" alt="Dismembering Horror">
           <h3>Dismembering Horror (Podcast)</h3>
         </a>
       </div>
+
+      <!-- 9) The Chebo (2017, 9 min.) -->
       <div class="portfolio-item">
         <a href="https://www.youtube.com/watch?v=yP5MZxgJCdE" target="_blank">
           <img src="images/chebo_450.jpg" alt="The Chebo">
           <h3>The Chebo</h3>
+          <p>(2017, 9 min.)</p>
         </a>
       </div>
+
+      <!-- 10) Shelter from the Storm (2015, 11 min.) -->
       <div class="portfolio-item">
         <a href="https://drive.google.com/file/d/1l55GNmGvI_sZ0RU_dyRUts0KkMN1Ow_T/view?usp=sharing" target="_blank">
           <img src="images/shelter_450.jpg" alt="Shelter from the Storm">
           <h3>Shelter from the Storm</h3>
+          <p>(2015, 11 min.)</p>
         </a>
       </div>
+
+      <!-- 11) The Parmesans: Live on a Rooftop in Chinatown (2015, 15 min.) -->
+      <div class="portfolio-item">
+        <a href="#" target="_blank">
+          <img src="images/parmsonarooftop_450.jpg" alt="The Parmesans: Live on a Rooftop in Chinatown">
+          <h3>The Parmesans: Live on a Rooftop in Chinatown</h3>
+          <p>(2015, 15 min.)</p>
+        </a>
+      </div>
+
+      <!-- 12) JuJaJe (2013, 3 min.) -->
+      <div class="portfolio-item">
+        <a href="#" target="_blank">
+          <img src="images/jujaje2_450.jpg" alt="JuJaJe">
+          <h3>JuJaJe</h3>
+          <p>(2013, 3 min.)</p>
+        </a>
+      </div>
+
+      <!-- 13) Last Year (2012, 13 min.) -->
+      <div class="portfolio-item">
+        <a href="#" target="_blank">
+          <img src="images/lastyear_450.jpg" alt="Last Year">
+          <h3>Last Year</h3>
+          <p>(2012, 13 min.)</p>
+        </a>
+      </div>
+
+      <!-- 14) Lovebound: Love Abounds (2012, 21 min.) -->
       <div class="portfolio-item">
         <a href="https://www.youtube.com/watch?v=Omw2YGHKnY8" target="_blank">
           <img src="images/lovebound2_450.jpg" alt="Lovebound: Love Abounds">
           <h3>Lovebound: Love Abounds</h3>
+          <p>(2012, 21 min.)</p>
         </a>
       </div>
+
+      <!-- 15) Forest Falls (2011, 27 min.) -->
       <div class="portfolio-item">
         <a href="https://www.youtube.com/watch?v=9hxcuU-y_MQ" target="_blank">
           <img src="images/forestfalls2_450.jpg" alt="Forest Falls">
           <h3>Forest Falls</h3>
+          <p>(2011, 27 min.)</p>
         </a>
       </div>
+
+      <!-- 16) The Kristy Corollary (2011, 17 min.) -->
       <div class="portfolio-item">
         <a href="https://www.youtube.com/watch?v=2CLIyoXyVqk" target="_blank">
           <img src="images/kristy2_450.jpg" alt="The Kristy Corollary">
           <h3>The Kristy Corollary</h3>
+          <p>(2011, 17 min.)</p>
         </a>
       </div>
+
+      <!-- 17) Douche (2010, 17 min.) -->
       <div class="portfolio-item">
         <a href="#" target="_blank">
           <img src="images/douche4_450.jpg" alt="Douche">
           <h3>Douche</h3>
+          <p>(2010, 17 min.)</p>
         </a>
       </div>
+
+      <!-- 18) Swimming Time with Tami (2007, 8 min.) -->
       <div class="portfolio-item">
         <a href="https://vimeo.com/19917156" target="_blank">
           <img src="images/swimmingtime_450.jpg" alt="Swimming Time with Tami">
           <h3>Swimming Time with Tami</h3>
+          <p>(2007, 8 min.)</p>
         </a>
       </div>
     </section>
 
     <!-- About Me Section -->
     <section class="about-me">
-      <p>Ryan is an explorer of the unified field, via filmmaking.</p>
+      <p>Ryan explores the world through filmmaking.</p>
       <img src="images/ryan_image1.jpg" alt="Ryan's Photo">
     </section>
   </main>
