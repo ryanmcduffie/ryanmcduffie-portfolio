@@ -45,7 +45,8 @@
         }
         .portfolio-item h3 {
             font-weight: normal;
-            font-size: 16px; /* Adjust as needed */
+            font-size: 16px;
+            font-style: italic;
             margin: 10px 0 0 0;
         }
         .links {
@@ -58,6 +59,35 @@
         }
         .links a:hover {
             text-decoration: underline;
+        }
+        /* About Me Section */
+        .about-me {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 20px auto;
+            align-items: center;
+            justify-content: center;
+            padding: 0 20px;
+        }
+        .about-text {
+            flex: 1;
+            min-width: 200px;
+            margin-right: 20px;
+        }
+        .about-text p {
+            margin: 0;
+            font-size: 16px;
+        }
+        .about-image {
+            flex: 1;
+            min-width: 200px;
+            text-align: center;
+        }
+        .about-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
         }
     </style>
 </head>
@@ -129,6 +159,16 @@
             <div class="portfolio-item">
                 <img src="images/swimmingtime_450.jpg" alt="Swimming Time with Tami">
                 <h3>Swimming Time with Tami</h3>
+            </div>
+        </section>
+        
+        <!-- About Me Section -->
+        <section class="about-me">
+            <div class="about-text">
+                <p>Ryan is a filmmaker-explorer living in Hollywood.</p>
+            </div>
+            <div class="about-image">
+                <img src="images/ryan_image1.jpg" alt="Ryan's Photo">
             </div>
         </section>
     </main>
