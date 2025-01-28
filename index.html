@@ -61,29 +61,23 @@
         /* About Me Section */
         .about-me {
             display: flex;
-            flex-wrap: wrap;
-            max-width: 1200px;
-            margin: 20px auto;
+            flex-wrap: wrap; /* allows wrapping on smaller screens */
             align-items: center;
             justify-content: center;
+            gap: 20px; /* space between text and image */
+            max-width: 1200px;
+            margin: 40px auto; /* add some extra space above/below */
             padding: 0 20px;
         }
         .about-text {
-            flex: 1;
-            min-width: 200px;
-            margin-right: 20px;
+            /* no forced width, stays just wide enough for text */
         }
         .about-text p {
             margin: 0;
             font-size: 16px;
         }
-        .about-image {
-            flex: 1;
-            min-width: 200px;
-            text-align: center;
-        }
         .about-image img {
-            width: 50%; /* Change to max-width: 300px if you’d prefer a fixed size */
+            width: 50%; /* make the image half its container's width */
             height: auto;
             border-radius: 5px;
         }
