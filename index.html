@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
   <!-- Favicon -->
-<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
-<link rel="icon" type="image/png" sizes="512x512" href="android-chrome-512x512.png">
-<link rel="manifest" href="site.webmanifest">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="android-chrome-512x512.png">
+  <link rel="manifest" href="site.webmanifest">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Ryan McDuffie Portfolio</title>
@@ -19,6 +19,7 @@
       margin: 0;
       padding: 0;
     }
+
     /*************
      * HEADER
      *************/
@@ -94,13 +95,15 @@
     /* Year/Runtime line beneath each title, non-italic */
     .portfolio-item p {
       margin: 5px 0 0 0;
-      font-style: normal; 
+      font-style: normal;
       font-size: 14px; /* Slightly smaller than the title */
     }
 
+    /* Ensures the link doesn't create odd spacing */
     .portfolio-item a {
-      text-decoration: none;
+      display: block;
       color: #000;
+      text-decoration: none;
     }
     .portfolio-item a:hover {
       text-decoration: underline;
@@ -151,13 +154,14 @@
 
   <main>
     <section class="portfolio">
-  <!-- 1) Have You Seen Me? (in production) -->
-  <div class="portfolio-item">
-    <a href="https://www.haveyouseenmemovie.com" target="_blank">
-    <img src="images/HYSM_v1_450.png" alt="Have You Seen Me?">
-    <h3>Have You Seen Me? (in production)</h3>
-    <!-- No year/runtime -->
-  </div>
+      <!-- 1) Have You Seen Me? (in production) -->
+      <div class="portfolio-item">
+        <a href="https://www.haveyouseenmemovie.com" target="_blank">
+          <img src="images/HYSM_v1_450.png" alt="Have You Seen Me?">
+          <h3>Have You Seen Me? (in production)</h3>
+        </a>
+        <!-- No year/runtime -->
+      </div>
 
       <!-- 2) Creativity Unleashed (Book; no year/runtime) -->
       <div class="portfolio-item">
